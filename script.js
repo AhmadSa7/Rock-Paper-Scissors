@@ -28,6 +28,8 @@ function playGame() {
 
     function playRound(choice, computerChoice) {
 
+        choice = choice.toLowerCase();
+
         if (choice == "rock" && computerChoice == "Rock" || choice == "paper" && computerChoice == "Paper" || choice == "scissors" && computerChoice == "Scissors") {
             console.log("it is a tie !");
         } 
