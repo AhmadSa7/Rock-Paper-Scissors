@@ -74,13 +74,37 @@ function playGame() {
 
         console.log(`Computer score : ${computerScore}`);
         console.log( `Your score : ${humanScore}`);
-
+        console.log("");
     }
 
 
 
     for (i = 0; i < 5; i++) {
         playRound(choice(), computerChoice(), humanScore, computerScore);
+    }
+
+
+    if (humanScore == computerScore) {
+
+        console.log("FINAL SCORE : ")
+        console.log(`You  ${humanScore} : ${computerScore} Computer `)
+        console.log("IT'S A TIE !")
+        console.log("");
+
+    } else if (humanScore > computerScore) {
+
+        console.log("FINAL SCORE : ")
+        console.log(`You ${humanScore} : ${computerScore} Computer `)
+        console.log("YOU WON !")
+        console.log("");
+
+    } else {
+
+        console.log("FINAL SCORE : ")
+        console.log(`You  ${humanScore} : ${computerScore} Computer `)
+        console.log("YOU LOST !")
+        console.log("");
+
     }
 
 }
